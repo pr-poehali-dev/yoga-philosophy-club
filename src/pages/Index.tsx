@@ -30,29 +30,7 @@ const courses = [
   },
 ];
 
-const blogPosts = [
-  {
-    id: 1,
-    date: "18 апреля 2026",
-    tag: "Медитация",
-    title: "Почему ум не замолкает во время медитации",
-    excerpt: "Мысли — не враги практики. Они и есть сама практика. Разберём, почему «пустой ум» — это миф.",
-  },
-  {
-    id: 2,
-    date: "5 апреля 2026",
-    tag: "Философия",
-    title: "Три гуны: как понять своё состояние прямо сейчас",
-    excerpt: "Тамас, раджас, саттва — не просто слова из древних текстов, а точный инструмент самодиагностики.",
-  },
-  {
-    id: 3,
-    date: "22 марта 2026",
-    tag: "Практика",
-    title: "Утренняя практика: пять минут, меняющих день",
-    excerpt: "Небольшая последовательность, которую можно делать не вставая с кровати. Проверено годами.",
-  },
-];
+
 
 function MandalaDecor() {
   return (
@@ -81,7 +59,6 @@ function NavBar() {
 
   const navItems = [
     { id: "courses", label: "Курсы" },
-    { id: "blog", label: "Блог" },
     { id: "teacher", label: "О преподавателе" },
   ];
 
@@ -352,68 +329,6 @@ function CoursesSection() {
   );
 }
 
-function BlogSection() {
-  return (
-    <section id="blog" className="py-24 relative" style={{ background: "var(--deep-bg)" }}>
-      <div
-        className="absolute top-0 left-0 right-0 h-px"
-        style={{ background: "linear-gradient(90deg, transparent, rgba(201,168,76,0.3), transparent)" }}
-      />
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="mb-16">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-6 h-px" style={{ background: "var(--gold)" }} />
-            <span className="font-golos text-[10px] tracking-[0.4em] uppercase" style={{ color: "var(--gold)" }}>Мысли и практики</span>
-          </div>
-          <h2 className="font-display" style={{ fontSize: "clamp(2rem, 4vw, 3.2rem)", color: "#f0e6d0" }}>
-            Блог
-          </h2>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-8">
-          {blogPosts.map((post, i) => (
-            <article
-              key={post.id}
-              className="group cursor-pointer animate-fade-in"
-              style={{ animationDelay: `${i * 0.15}s`, opacity: 0 }}
-            >
-              <div className="mb-4 flex items-center gap-3">
-                <span className="font-golos text-[9px] tracking-[0.35em] uppercase" style={{ color: "var(--gold)" }}>
-                  {post.tag}
-                </span>
-                <span className="font-golos text-xs font-light" style={{ color: "#4a3e30" }}>
-                  {post.date}
-                </span>
-              </div>
-              <h3
-                className="font-display text-xl mb-3 leading-snug transition-colors duration-300"
-                style={{ color: "#e8d8bc" }}
-              >
-                {post.title}
-              </h3>
-              <p className="font-golos text-sm font-light leading-relaxed mb-5" style={{ color: "#5a4e3a" }}>
-                {post.excerpt}
-              </p>
-              <div
-                className="h-px w-0 transition-all duration-500 group-hover:w-full"
-                style={{ background: "var(--gold-dim)" }}
-              />
-              <div className="flex items-center gap-2 mt-3">
-                <span
-                  className="font-golos text-xs tracking-[0.15em] uppercase transition-colors duration-300 group-hover:text-yellow-600"
-                  style={{ color: "#4a3e30" }}
-                >
-                  Читать
-                </span>
-                <Icon name="ArrowRight" size={12} style={{ color: "#4a3e30" }} />
-              </div>
-            </article>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
 
 function TeacherSection() {
   return (
@@ -514,7 +429,7 @@ function Footer() {
           </span>
         </div>
         <div className="flex gap-8">
-          {[["courses", "Курсы"], ["blog", "Блог"], ["teacher", "О преподавателе"]].map(([id, label]) => (
+          {[["courses", "Курсы"], ["teacher", "О преподавателе"]].map(([id, label]) => (
             <button
               key={id}
               onClick={() => scrollTo(id)}
@@ -541,7 +456,7 @@ export default function Index() {
       <NavBar />
       <HeroSection />
       <CoursesSection />
-      <BlogSection />
+
       <TeacherSection />
       <Footer />
     </div>
