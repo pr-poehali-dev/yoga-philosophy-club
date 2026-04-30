@@ -71,7 +71,7 @@ function NavBar() {
     <nav
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
       style={{
-        background: scrolled ? "rgba(15,14,12,0.96)" : "transparent",
+        background: scrolled ? "rgba(255,252,245,0.96)" : "transparent",
         backdropFilter: scrolled ? "blur(12px)" : "none",
         borderBottom: scrolled ? "1px solid rgba(201,168,76,0.12)" : "none",
       }}
@@ -98,7 +98,7 @@ function NavBar() {
             style={{ border: "1px solid var(--gold-dim)", color: "var(--gold)", background: "transparent" }}
             onMouseEnter={(e) => {
               e.currentTarget.style.background = "var(--gold)";
-              e.currentTarget.style.color = "#0f0e0c";
+              e.currentTarget.style.color = "#ffffff";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.background = "transparent";
@@ -115,7 +115,7 @@ function NavBar() {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden px-6 pb-6 flex flex-col gap-5" style={{ background: "rgba(15,14,12,0.98)" }}>
+        <div className="md:hidden px-6 pb-6 flex flex-col gap-5" style={{ background: "rgba(255,252,245,0.98)" }}>
           {navItems.map((item) => (
             <button key={item.id} onClick={() => scrollTo(item.id)} className="nav-link text-left py-1">
               {item.label}
@@ -151,13 +151,13 @@ function HeroSection() {
             </span>
           </div>
 
-          <h1 className="font-display mb-6 leading-tight" style={{ fontSize: "clamp(2.8rem, 6vw, 5rem)", color: "#f0e6d0" }}>
+          <h1 className="font-display mb-6 leading-tight" style={{ fontSize: "clamp(2.8rem, 6vw, 5rem)", color: "#2a1f0e" }}>
             Путь внутрь
             <br />
             <em style={{ color: "var(--gold-light)", fontStyle: "italic" }}>себя</em>
           </h1>
 
-          <p className="font-golos font-light leading-relaxed mb-10 max-w-md" style={{ color: "#9a8a72", fontSize: "1rem" }}>
+          <p className="font-golos font-light leading-relaxed mb-10 max-w-md" style={{ color: "#5a4a35", fontSize: "1rem" }}>
             Йога и философия как единый путь. Практики, уходящие корнями в традицию, и знания, применимые в современной жизни.
           </p>
 
@@ -165,7 +165,7 @@ function HeroSection() {
             <button
               onClick={() => document.getElementById("courses")?.scrollIntoView({ behavior: "smooth" })}
               className="px-8 py-3.5 font-golos text-sm font-medium tracking-wide transition-all duration-300"
-              style={{ background: "var(--gold)", color: "#0f0e0c" }}
+              style={{ background: "var(--gold)", color: "#ffffff" }}
               onMouseEnter={(e) => (e.currentTarget.style.background = "var(--gold-light)")}
               onMouseLeave={(e) => (e.currentTarget.style.background = "var(--gold)")}
             >
@@ -174,14 +174,14 @@ function HeroSection() {
             <button
               onClick={() => document.getElementById("teacher")?.scrollIntoView({ behavior: "smooth" })}
               className="px-8 py-3.5 font-golos text-sm font-light tracking-wide transition-all duration-300"
-              style={{ border: "1px solid rgba(201,168,76,0.3)", color: "#9a8a72" }}
+              style={{ border: "1px solid rgba(160,120,32,0.3)", color: "#5a4a35" }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.borderColor = "var(--gold)";
                 e.currentTarget.style.color = "var(--gold)";
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = "rgba(201,168,76,0.3)";
-                e.currentTarget.style.color = "#9a8a72";
+                e.currentTarget.style.borderColor = "rgba(160,120,32,0.3)";
+                e.currentTarget.style.color = "#5a4a35";
               }}
             >
               О преподавателе
@@ -192,7 +192,7 @@ function HeroSection() {
             {[["200+", "учеников"], ["5 лет", "практики"], ["50+", "видеоуроков"]].map(([num, label]) => (
               <div key={label} className="flex flex-col gap-1">
                 <span className="font-display text-2xl font-semibold" style={{ color: "var(--gold-light)" }}>{num}</span>
-                <span className="font-golos text-xs font-light" style={{ color: "#6a5c48" }}>{label}</span>
+                <span className="font-golos text-xs font-light" style={{ color: "#7a6850" }}>{label}</span>
               </div>
             ))}
           </div>
@@ -212,12 +212,12 @@ function HeroSection() {
             />
             <div
               className="absolute inset-0"
-              style={{ background: "linear-gradient(180deg, transparent 50%, rgba(15,14,12,0.6) 100%)" }}
+              style={{ background: "linear-gradient(180deg, transparent 50%, rgba(245,240,232,0.4) 100%)" }}
             />
           </div>
           <div
             className="absolute -bottom-4 -right-4 w-24 h-24 rounded-full flex items-center justify-center"
-            style={{ background: "var(--card-bg)", border: "1px solid rgba(201,168,76,0.3)" }}
+            style={{ background: "var(--card-bg)", border: "1px solid rgba(160,120,32,0.3)" }}
           >
             <span className="font-display text-3xl" style={{ color: "var(--gold)", lineHeight: 1 }}>☯</span>
           </div>
@@ -234,7 +234,7 @@ function HeroSection() {
 
 function CoursesSection() {
   return (
-    <section id="courses" className="py-24 relative" style={{ background: "#0c0b09" }}>
+    <section id="courses" className="py-24 relative" style={{ background: "#f5f0e8" }}>
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-end justify-between mb-16 flex-wrap gap-6">
           <div>
@@ -242,11 +242,11 @@ function CoursesSection() {
               <div className="w-6 h-px" style={{ background: "var(--gold)" }} />
               <span className="font-golos text-[10px] tracking-[0.4em] uppercase" style={{ color: "var(--gold)" }}>Программы</span>
             </div>
-            <h2 className="font-display" style={{ fontSize: "clamp(2rem, 4vw, 3.2rem)", color: "#f0e6d0" }}>
+            <h2 className="font-display" style={{ fontSize: "clamp(2rem, 4vw, 3.2rem)", color: "#2a1f0e" }}>
               Курсы
             </h2>
           </div>
-          <p className="font-golos font-light max-w-xs text-sm leading-relaxed" style={{ color: "#6a5c48" }}>
+          <p className="font-golos font-light max-w-xs text-sm leading-relaxed" style={{ color: "#7a6850" }}>
             Каждый курс — законченная практика. Видеоуроки, тексты, живые встречи.
           </p>
         </div>
@@ -258,7 +258,7 @@ function CoursesSection() {
               className="card-hover relative overflow-hidden animate-fade-in"
               style={{
                 background: "var(--card-bg)",
-                border: "1px solid rgba(201,168,76,0.1)",
+                border: "1px solid rgba(160,120,32,0.15)",
                 animationDelay: `${i * 0.15}s`,
                 opacity: 0,
               }}
@@ -274,32 +274,32 @@ function CoursesSection() {
                 >
                   {course.tag}
                 </span>
-                <h3 className="font-display text-xl mb-3 leading-snug" style={{ color: "#e8d8bc" }}>
+                <h3 className="font-display text-xl mb-3 leading-snug" style={{ color: "#2a1f0e" }}>
                   {course.title}
                 </h3>
-                <p className="font-golos text-sm font-light leading-relaxed mb-8" style={{ color: "#6a5c48" }}>
+                <p className="font-golos text-sm font-light leading-relaxed mb-8" style={{ color: "#7a6850" }}>
                   {course.desc}
                 </p>
                 <div className="flex items-center gap-5 mb-8 pt-6" style={{ borderTop: "1px solid rgba(201,168,76,0.08)" }}>
                   <div className="flex items-center gap-2">
                     <Icon name="Clock" size={13} style={{ color: "var(--gold-dim)" }} />
-                    <span className="font-golos text-xs font-light" style={{ color: "#6a5c48" }}>{course.duration}</span>
+                    <span className="font-golos text-xs font-light" style={{ color: "#7a6850" }}>{course.duration}</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Icon name="PlayCircle" size={13} style={{ color: "var(--gold-dim)" }} />
-                    <span className="font-golos text-xs font-light" style={{ color: "#6a5c48" }}>{course.lessons} уроков</span>
+                    <span className="font-golos text-xs font-light" style={{ color: "#7a6850" }}>{course.lessons} уроков</span>
                   </div>
                 </div>
                 <button
                   className="w-full py-3 font-golos text-xs tracking-[0.2em] uppercase font-medium transition-all duration-300"
-                  style={{ background: "transparent", border: "1px solid rgba(201,168,76,0.3)", color: "var(--gold)" }}
+                  style={{ background: "transparent", border: "1px solid rgba(160,120,32,0.3)", color: "var(--gold)" }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.background = "rgba(201,168,76,0.1)";
                     e.currentTarget.style.borderColor = "var(--gold)";
                   }}
                   onMouseLeave={(e) => {
                     e.currentTarget.style.background = "transparent";
-                    e.currentTarget.style.borderColor = "rgba(201,168,76,0.3)";
+                    e.currentTarget.style.borderColor = "rgba(160,120,32,0.3)";
                   }}
                 >
                   Подробнее
@@ -311,11 +311,11 @@ function CoursesSection() {
 
         <div
           className="mt-16 p-8 flex flex-col md:flex-row items-center justify-between gap-6"
-          style={{ background: "rgba(201,168,76,0.05)", border: "1px solid rgba(201,168,76,0.15)" }}
+          style={{ background: "rgba(160,120,32,0.07)", border: "1px solid rgba(160,120,32,0.2)" }}
         >
           <div>
-            <h4 className="font-display text-xl mb-1" style={{ color: "#e8d8bc" }}>Хранилище видеоуроков</h4>
-            <p className="font-golos text-sm font-light" style={{ color: "#6a5c48" }}>
+            <h4 className="font-display text-xl mb-1" style={{ color: "#2a1f0e" }}>Хранилище видеоуроков</h4>
+            <p className="font-golos text-sm font-light" style={{ color: "#7a6850" }}>
               Все купленные курсы доступны в личном кабинете без ограничений по времени
             </p>
           </div>
@@ -332,10 +332,10 @@ function CoursesSection() {
 
 function TeacherSection() {
   return (
-    <section id="teacher" className="py-24 relative overflow-hidden" style={{ background: "#0c0b09" }}>
+    <section id="teacher" className="py-24 relative overflow-hidden" style={{ background: "#f5f0e8" }}>
       <div
         className="absolute top-0 left-0 right-0 h-px"
-        style={{ background: "linear-gradient(90deg, transparent, rgba(201,168,76,0.3), transparent)" }}
+        style={{ background: "linear-gradient(90deg, transparent, rgba(160,120,32,0.3), transparent)" }}
       />
       <div
         className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full opacity-5 pointer-events-none"
@@ -346,7 +346,7 @@ function TeacherSection() {
         <div className="relative order-2 md:order-1">
           <div
             className="absolute -top-6 -left-6 right-6 bottom-6 opacity-20"
-            style={{ border: "1px solid rgba(201,168,76,0.4)" }}
+            style={{ border: "1px solid rgba(160,120,32,0.3)" }}
           />
           <img
             src={TEACHER_IMG}
@@ -356,7 +356,7 @@ function TeacherSection() {
           />
           <div
             className="absolute bottom-8 -right-6 p-5"
-            style={{ background: "var(--card-bg)", border: "1px solid rgba(201,168,76,0.2)" }}
+            style={{ background: "var(--card-bg)", border: "1px solid rgba(160,120,32,0.25)" }}
           >
             <div className="font-display text-4xl font-light mb-0.5" style={{ color: "var(--gold-light)" }}>12</div>
             <div className="font-golos text-xs font-light" style={{ color: "#6a5c48" }}>лет в практике</div>
@@ -369,7 +369,7 @@ function TeacherSection() {
             <span className="font-golos text-[10px] tracking-[0.4em] uppercase" style={{ color: "var(--gold)" }}>Преподаватель</span>
           </div>
 
-          <h2 className="font-display mb-2" style={{ fontSize: "clamp(2rem, 4vw, 3rem)", color: "#f0e6d0" }}>
+          <h2 className="font-display mb-2" style={{ fontSize: "clamp(2rem, 4vw, 3rem)", color: "#2a1f0e" }}>
             Анна Светлова
           </h2>
           <p className="font-golos text-sm mb-8 font-light tracking-wide" style={{ color: "var(--gold-dim)" }}>
@@ -382,7 +382,7 @@ function TeacherSection() {
               "Изучает санскрит и философию Адвайта-Веданты. Провела более 300 групповых и индивидуальных занятий.",
               "Убеждена: йога — это не про гибкость тела, а про гибкость восприятия.",
             ].map((text, i) => (
-              <p key={i} className="font-golos text-sm font-light leading-relaxed" style={{ color: "#7a6a52" }}>
+              <p key={i} className="font-golos text-sm font-light leading-relaxed" style={{ color: "#6a5040" }}>
                 {text}
               </p>
             ))}
@@ -402,7 +402,7 @@ function TeacherSection() {
 
           <button
             className="px-8 py-3.5 font-golos text-sm tracking-wide font-medium transition-all duration-300"
-            style={{ background: "var(--gold)", color: "#0f0e0c" }}
+            style={{ background: "var(--gold)", color: "#ffffff" }}
             onMouseEnter={(e) => (e.currentTarget.style.background = "var(--gold-light)")}
             onMouseLeave={(e) => (e.currentTarget.style.background = "var(--gold)")}
           >
@@ -418,7 +418,7 @@ function Footer() {
   const scrollTo = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 
   return (
-    <footer className="py-12 relative" style={{ background: "#080807", borderTop: "1px solid rgba(201,168,76,0.1)" }}>
+    <footer className="py-12 relative" style={{ background: "#f0ebe0", borderTop: "1px solid rgba(160,120,32,0.15)" }}>
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex flex-col items-center md:items-start gap-1">
           <span className="font-display text-lg tracking-wider" style={{ color: "var(--gold-light)", fontStyle: "italic" }}>
@@ -442,8 +442,8 @@ function Footer() {
             </button>
           ))}
         </div>
-        <p className="font-golos text-[10px] font-light" style={{ color: "#3a3020" }}>
-          © 2026 Ananda
+        <p className="font-golos text-[10px] font-light" style={{ color: "#9a8870" }}>
+          © 2026 Сакральная Зона
         </p>
       </div>
     </footer>
