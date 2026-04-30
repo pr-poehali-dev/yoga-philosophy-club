@@ -169,7 +169,7 @@ function HeroSection() {
               onMouseEnter={(e) => (e.currentTarget.style.background = "var(--gold-light)")}
               onMouseLeave={(e) => (e.currentTarget.style.background = "var(--gold)")}
             >
-              Смотреть курсы
+              Смотреть курсы клуба
             </button>
             <button
               onClick={() => document.getElementById("teacher")?.scrollIntoView({ behavior: "smooth" })}
