@@ -79,7 +79,7 @@ function NavBar() {
       <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
         <button onClick={() => scrollTo("hero")} className="flex flex-col items-start gap-0.5">
           <span className="font-display text-xl tracking-wider" style={{ color: "var(--gold-light)", fontStyle: "italic" }}>
-            Ananda
+            Сакральная Зона
           </span>
           <span className="font-golos text-[9px] tracking-[0.3em] uppercase" style={{ color: "var(--gold-dim)" }}>
             Йога &amp; Философия
@@ -147,7 +147,7 @@ function HeroSection() {
           <div className="flex items-center gap-3 mb-8">
             <div className="w-8 h-px" style={{ background: "var(--gold)" }} />
             <span className="font-golos text-[10px] tracking-[0.4em] uppercase" style={{ color: "var(--gold)" }}>
-              Клуб осознанной практики
+              Сакральная Зона
             </span>
           </div>
 
@@ -422,7 +422,7 @@ function Footer() {
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex flex-col items-center md:items-start gap-1">
           <span className="font-display text-lg tracking-wider" style={{ color: "var(--gold-light)", fontStyle: "italic" }}>
-            Ananda
+            Сакральная Зона
           </span>
           <span className="font-golos text-[9px] tracking-[0.3em] uppercase" style={{ color: "var(--gold-dim)" }}>
             Йога &amp; Философия
