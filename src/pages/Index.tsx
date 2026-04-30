@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Icon from "@/components/ui/icon";
 
-const TEACHER_IMG = "https://cdn.poehali.dev/projects/f3d73461-4e0d-41f2-8a78-5d25da796f94/files/491348ac-f51e-4852-9ccc-106b25710c3f.jpg";
+const TEACHER_IMG = "https://cdn.poehali.dev/projects/f3d73461-4e0d-41f2-8a78-5d25da796f94/bucket/9495de6e-3d8b-4a8c-bd2c-52ba7b6cd01c.jpg";
 
 const courses = [
   {
