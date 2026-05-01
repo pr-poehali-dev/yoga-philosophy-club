@@ -397,14 +397,31 @@ function TeacherSection() {
             ))}
           </div>
 
-          <button
-            className="px-8 py-3.5 font-golos text-sm tracking-wide font-medium transition-all duration-300"
-            style={{ background: "var(--gold)", color: "#ffffff" }}
-            onMouseEnter={(e) => (e.currentTarget.style.background = "var(--gold-light)")}
-            onMouseLeave={(e) => (e.currentTarget.style.background = "var(--gold)")}
-          >
-            Записаться на консультацию
-          </button>
+          <div className="flex flex-wrap gap-4">
+            <a
+              href="https://t.me/telmango"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3.5 font-golos text-sm tracking-wide font-medium transition-all duration-300"
+              style={{ background: "var(--gold)", color: "#ffffff", display: "inline-block" }}
+              onMouseEnter={(e) => (e.currentTarget.style.background = "var(--gold-light)")}
+              onMouseLeave={(e) => (e.currentTarget.style.background = "var(--gold)")}
+            >
+              Задать вопрос Тельману по клубу
+            </a>
+            <a
+              href="https://t.me/tribute/app?startapp=sToA"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3.5 font-golos text-sm tracking-wide font-medium transition-all duration-300 flex flex-col items-center justify-center"
+              style={{ background: "#ffffff", color: "#2a1f0e", border: "1px solid rgba(160,120,32,0.3)", display: "inline-flex" }}
+              onMouseEnter={(e) => (e.currentTarget.style.borderColor = "var(--gold)")}
+              onMouseLeave={(e) => (e.currentTarget.style.borderColor = "rgba(160,120,32,0.3)")}
+            >
+              <span>Подписаться в клуб — <span style={{ textDecoration: "line-through", opacity: 0.5 }}>2500₽</span> 777₽/мес</span>
+              <span className="font-golos text-[10px] font-light mt-0.5" style={{ color: "#7a6850" }}>(работает только с телефона)</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
