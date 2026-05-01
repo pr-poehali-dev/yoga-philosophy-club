@@ -113,21 +113,18 @@ function NavBar() {
               {item.label}
             </button>
           ))}
-          <button
-            onClick={() => scrollTo("courses")}
-            className="ml-4 px-5 py-2 text-[10px] tracking-[0.2em] uppercase font-golos font-medium transition-all duration-300"
-            style={{ border: "1px solid var(--gold-dim)", color: "var(--gold)", background: "transparent" }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.background = "var(--gold)";
-              e.currentTarget.style.color = "#ffffff";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.background = "transparent";
-              e.currentTarget.style.color = "var(--gold)";
-            }}
+          <a
+            href="https://t.me/tribute/app?startapp=sToA"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-4 px-5 py-2 text-[10px] tracking-[0.2em] uppercase font-golos font-medium transition-all duration-300 flex flex-col items-center"
+            style={{ border: "1px solid var(--gold-dim)", color: "#2a1f0e", background: "#ffffff" }}
+            onMouseEnter={(e) => (e.currentTarget.style.borderColor = "var(--gold)")}
+            onMouseLeave={(e) => (e.currentTarget.style.borderColor = "var(--gold-dim)")}
           >
-            Записаться
-          </button>
+            <span>Подписаться — <span style={{ textDecoration: "line-through", opacity: 0.5 }}>2500₽</span> 777₽</span>
+            <span className="font-golos text-[9px] font-light normal-case tracking-normal" style={{ color: "#7a6850" }}>(только с телефона)</span>
+          </a>
         </div>
 
         <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)} style={{ color: "var(--gold)" }}>
@@ -330,7 +327,7 @@ function CoursesSection() {
           <div>
             <h4 className="font-display text-xl mb-1" style={{ color: "#2a1f0e" }}>Хранилище видеоуроков</h4>
             <p className="font-golos text-sm font-light" style={{ color: "#7a6850" }}>
-              Все купленные курсы доступны в личном кабинете без ограничений по времени
+              Никаких скрытых платежей: вы получаете полный доступ ко всем курсам и практикам Сакральной Зоны по единой подписке
             </p>
           </div>
           <div className="flex items-center gap-3 shrink-0">
