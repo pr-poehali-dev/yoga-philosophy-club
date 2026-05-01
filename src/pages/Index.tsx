@@ -9,6 +9,7 @@ const courses = [
     tag: "Йога",
     title: "Спина без боли 100%",
     desc: "7 практик по 30 минут — 7 шагов к свободе вашего позвоночника. Каждый урок посвящен конкретной зоне тела, которая напрямую влияет на здоровье спины. Мы не просто работаем с симптомами — мы устраняем причины дискомфорта через комплексную проработку всего организма.",
+    details: "Это не скучная терапия или обычная физкультура. Это полноценная глубокая практика йоги с медитативным погружением в процесс. Вы не только укрепляете мышечный корсет, но и учитесь чувствовать своё тело, расслабляя его на глубоком уровне. Верните своей спине природную силу и легкость в рамках нашего клуба.",
     duration: "7 уроков",
     lessons: 7,
   },
@@ -217,6 +218,7 @@ function HeroSection() {
 }
 
 function CoursesSection() {
+  const [expanded, setExpanded] = useState<number | null>(null);
   return (
     <section id="courses" className="py-24 relative" style={{ background: "#f5f0e8" }}>
       <div className="max-w-6xl mx-auto px-6">
@@ -264,6 +266,11 @@ function CoursesSection() {
                 <p className="font-golos text-sm font-light leading-relaxed mb-8" style={{ color: "#7a6850" }}>
                   {course.desc}
                 </p>
+                {expanded === course.id && course.details && (
+                  <p className="font-golos text-sm font-light leading-relaxed mb-8" style={{ color: "#7a6850" }}>
+                    {course.details}
+                  </p>
+                )}
                 <div className="flex items-center gap-5 mb-8 pt-6" style={{ borderTop: "1px solid rgba(201,168,76,0.08)" }}>
                   <div className="flex items-center gap-2">
                     <Icon name="Clock" size={13} style={{ color: "var(--gold-dim)" }} />
@@ -285,8 +292,9 @@ function CoursesSection() {
                     e.currentTarget.style.background = "transparent";
                     e.currentTarget.style.borderColor = "rgba(160,120,32,0.3)";
                   }}
+                  onClick={() => setExpanded(expanded === course.id ? null : course.id)}
                 >
-                  Подробнее
+                  {expanded === course.id ? "Свернуть" : "Подробнее"}
                 </button>
               </div>
             </div>
