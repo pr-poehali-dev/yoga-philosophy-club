@@ -289,16 +289,6 @@ function CoursesSection() {
                     {course.details}
                   </p>
                 )}
-                <div className="flex items-center gap-5 mb-8 pt-6" style={{ borderTop: "1px solid rgba(201,168,76,0.08)" }}>
-                  <div className="flex items-center gap-2">
-                    <Icon name="Clock" size={13} style={{ color: "var(--gold-dim)" }} />
-                    <span className="font-golos text-xs font-light" style={{ color: "#7a6850" }}>{course.duration}</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Icon name="PlayCircle" size={13} style={{ color: "var(--gold-dim)" }} />
-                    <span className="font-golos text-xs font-light" style={{ color: "#7a6850" }}>{course.lessons} уроков</span>
-                  </div>
-                </div>
                 <button
                   className="w-full py-3 font-golos text-xs tracking-[0.2em] uppercase font-medium transition-all duration-300"
                   style={{ background: "transparent", border: "1px solid rgba(160,120,32,0.3)", color: "var(--gold)" }}
