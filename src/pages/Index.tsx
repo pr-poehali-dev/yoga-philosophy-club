@@ -123,7 +123,7 @@ function NavBar() {
             onMouseLeave={(e) => (e.currentTarget.style.borderColor = "var(--gold-dim)")}
           >
             <span>Подписаться — <span style={{ textDecoration: "line-through", opacity: 0.5 }}>2500₽</span> 777₽</span>
-            <span className="font-golos text-[9px] font-light normal-case tracking-normal" style={{ color: "#7a6850" }}>(только с телефона)</span>
+            <span className="font-golos text-[9px] font-light normal-case tracking-normal" style={{ color: "#7a6850" }}>(если ссылка не открывается с PC — откройте с телефона)</span>
           </a>
         </div>
 
