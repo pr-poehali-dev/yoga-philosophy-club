@@ -242,12 +242,23 @@ function HeroSection() {
               style={{ background: "linear-gradient(180deg, transparent 50%, rgba(245,240,232,0.4) 100%)" }}
             />
           </div>
-          <div
-            className="absolute -bottom-4 -right-4 w-24 h-24 rounded-full flex items-center justify-center"
+          <a
+            href="https://youtu.be/-Ag1J23oZq8?si=7oNdmEUu--L4c0Jo&t=289"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute -bottom-4 -right-4 w-24 h-24 rounded-full flex items-center justify-center transition-all duration-300"
             style={{ background: "var(--card-bg)", border: "1px solid rgba(160,120,32,0.3)" }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.background = "rgba(201,168,76,0.15)";
+              e.currentTarget.style.borderColor = "var(--gold)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.background = "var(--card-bg)";
+              e.currentTarget.style.borderColor = "rgba(160,120,32,0.3)";
+            }}
           >
-            <span className="font-display text-3xl" style={{ color: "var(--gold)", lineHeight: 1 }}>☯</span>
-          </div>
+            <span className="font-display text-3xl" style={{ color: "var(--gold)", lineHeight: 1 }}>🕉</span>
+          </a>
         </div>
       </div>
 
