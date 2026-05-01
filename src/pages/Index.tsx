@@ -242,12 +242,8 @@ function CoursesSection() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-end justify-between mb-16 flex-wrap gap-6">
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-6 h-px" style={{ background: "var(--gold)" }} />
-              <span className="font-golos text-[10px] tracking-[0.4em] uppercase" style={{ color: "var(--gold)" }}>Программы</span>
-            </div>
             <h2 className="font-display" style={{ fontSize: "clamp(2rem, 4vw, 3.2rem)", color: "#2a1f0e" }}>
-              Курсы
+              Материалы и курсы Сакральной Зоны
             </h2>
           </div>
           <p className="font-golos font-light max-w-xs text-sm leading-relaxed" style={{ color: "#7a6850" }}>
