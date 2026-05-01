@@ -82,7 +82,7 @@ function NavBar() {
             Сакральная Зона
           </span>
           <span className="font-golos text-[9px] tracking-[0.3em] uppercase" style={{ color: "var(--gold-dim)" }}>
-            Йога &amp; Философия
+            Йога &amp; Знание
           </span>
         </button>
 
@@ -425,7 +425,7 @@ function Footer() {
             Сакральная Зона
           </span>
           <span className="font-golos text-[9px] tracking-[0.3em] uppercase" style={{ color: "var(--gold-dim)" }}>
-            Йога &amp; Философия
+            Йога &amp; Знание
           </span>
         </div>
         <div className="flex gap-8">
