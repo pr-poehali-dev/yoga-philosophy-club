@@ -216,7 +216,7 @@ function HeroSection() {
           </div>
 
           <div className="flex gap-10 mt-14">
-            {[["200+", "учеников"], ["5 лет", "практики"], ["50+", "видеоуроков"]].map(([num, label]) => (
+            {[["200+", "учеников по всему миру"], ["+12 лет", "личной практики"], ["50+", "видеоуроков в клубе"]].map(([num, label]) => (
               <div key={label} className="flex flex-col gap-1">
                 <span className="font-display text-2xl font-semibold" style={{ color: "var(--gold-light)" }}>{num}</span>
                 <span className="font-golos text-xs font-light" style={{ color: "#7a6850" }}>{label}</span>
