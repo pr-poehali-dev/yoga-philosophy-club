@@ -247,7 +247,7 @@ function CoursesSection() {
             </h2>
           </div>
           <p className="font-golos font-light max-w-xs text-sm leading-relaxed" style={{ color: "#7a6850" }}>
-            Каждый курс — законченная практика. Видеоуроки, тексты, живые встречи.
+            Каждый курс — законченная практика.
           </p>
         </div>
 
