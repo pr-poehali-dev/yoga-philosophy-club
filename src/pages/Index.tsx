@@ -123,7 +123,7 @@ function NavBar() {
             </button>
           ))}
           <a
-            href="https://t.me/tribute/app?startapp=sToA"
+            href="https://web.tribute.tg/s/ToA"
             target="_blank"
             rel="noopener noreferrer"
             className="ml-4 px-5 py-2 text-[10px] tracking-[0.2em] uppercase font-golos font-medium transition-all duration-300 flex flex-col items-center"
@@ -445,7 +445,7 @@ function TeacherSection() {
               Задать вопрос Тельману по клубу
             </a>
             <a
-              href="https://t.me/tribute/app?startapp=sToA"
+              href="https://web.tribute.tg/s/ToA"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3.5 font-golos text-sm tracking-wide font-medium transition-all duration-300 flex flex-col items-center justify-center"
