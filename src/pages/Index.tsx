@@ -109,7 +109,7 @@ function NavBar() {
       <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
         <button onClick={() => scrollTo("hero")} className="flex flex-col items-start gap-0.5">
           <span className="font-display text-xl tracking-wider" style={{ color: "var(--gold-light)", fontStyle: "italic" }}>
-            Сакральная Зона
+            Мистическая Йога
           </span>
           <span className="font-golos text-[9px] tracking-[0.3em] uppercase" style={{ color: "var(--gold-dim)" }}>
             Йога &amp; Знание
@@ -174,7 +174,7 @@ function HeroSection() {
           <div className="flex items-center gap-3 mb-8">
             <div className="w-8 h-px" style={{ background: "var(--gold)" }} />
             <span className="font-golos text-[10px] tracking-[0.4em] uppercase" style={{ color: "var(--gold)" }}>
-              Сакральная Зона
+              Мистическая Йога
             </span>
           </div>
 
@@ -185,7 +185,7 @@ function HeroSection() {
           </h1>
 
           <p className="font-golos font-light leading-relaxed mb-10 max-w-md" style={{ color: "#5a4a35", fontSize: "1rem" }}>
-            Мы живем в эпоху информационного шума, где «мудрость» раздается на каждом углу. Но Веды называют истинное знание словом «Шастра». Ша — наставление, Астра — оружие. Знание без системы — опасно. Оно либо лежит мертвым грузом, либо разрушает тебя изнутри, создавая иллюзии. Но в правильных руках это оружие уничтожает твоих внутренних демонов: страх, апатию и невежество. Клуб «Сакральная Зона» — это фильтр и практика. Мы убрали всё лишнее, оставив только авторитетные источники и работающие инструменты. Здесь ты не просто «узнаешь новое» — ты учишься владеть своим умом и телом как совершенным инструментом.
+            Мы живем в эпоху информационного шума, где «мудрость» раздается на каждом углу. Но Веды называют истинное знание словом «Шастра». Ша — наставление, Астра — оружие. Знание без системы — опасно. Оно либо лежит мертвым грузом, либо разрушает тебя изнутри, создавая иллюзии. Но в правильных руках это оружие уничтожает твоих внутренних демонов: страх, апатию и невежество. Клуб «Мистическая Йога» — это фильтр и практика. Мы убрали всё лишнее, оставив только авторитетные источники и работающие инструменты. Здесь ты не просто «узнаешь новое» — ты учишься владеть своим умом и телом как совершенным инструментом.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -471,7 +471,7 @@ function Footer() {
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex flex-col items-center md:items-start gap-1">
           <span className="font-display text-lg tracking-wider" style={{ color: "var(--gold-light)", fontStyle: "italic" }}>
-            Сакральная Зона
+            Мистическая Йога
           </span>
           <span className="font-golos text-[9px] tracking-[0.3em] uppercase" style={{ color: "var(--gold-dim)" }}>
             Йога &amp; Знание
@@ -492,7 +492,7 @@ function Footer() {
           ))}
         </div>
         <p className="font-golos text-[10px] font-light" style={{ color: "#9a8870" }}>
-          © 2026 Сакральная Зона
+          © 2026 Мистическая Йога
         </p>
       </div>
     </footer>
